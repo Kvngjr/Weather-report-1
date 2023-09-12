@@ -27,7 +27,7 @@ if response.status_code == 200:
         humidity = data["main"]["humidity"]
 
         # Convert temperature from Kelvin to Celsius
-        temperature_celsius = temperature - 273.15
+        temperature_celsius = temperature - 273.15%
 
         # Display the weather information
         print(f"Weather in {city}: {weather_main} ({weather_description})")
